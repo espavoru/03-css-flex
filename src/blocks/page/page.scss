@@ -91,32 +91,30 @@ img {
 /*===================================
 =            Flex styles            =
 ===================================*/
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 
-.main-nav {
+  min-height: 90vh;
 
-  li {
-    width: 100px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    color: skyblue;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
+  background-color: #333;
 }
 
+.title {
+  text-align: center;
+}
+
+article {
+  flex: 1;
+  margin: 10px;
+
+  background-color: #fff;
+}
+
+.not-real {
+  align-self: flex-end;
+}
 /*=====  End of Flex styles  ======*/
 
 // yellowgreen mediumseagreen skyblue mediumpurple palegoldenrod dodgerblue orangered
